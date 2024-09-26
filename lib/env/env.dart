@@ -1,0 +1,8 @@
+// lib/env/env.dart
+import 'package:envied/envied.dart';
+
+@Envied(path: ".env")
+abstract class Env {
+  @EnviedField(varName: 'OPEN_AI_API_KEY')
+  static const String apiKey = "";
+}
